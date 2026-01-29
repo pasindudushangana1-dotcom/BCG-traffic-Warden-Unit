@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="School Traffic Warden Society - Order amidst Chaos">
+    <title>Traffic Warden Society</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="noise-overlay"></div>
+
+    <header class="glass-header">
+        <div class="logo-container">
+            <span class="logo-icon">🚧</span>
+            <span class="logo-text">TWS</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#guidelines">Guidelines</a></li>
+                <li><a href="#join">Join Us</a></li>
+            </ul>
+        </nav>
+        <button class="btn-primary">Warden Login</button>
+        <button class="mobile-menu-btn" aria-label="Menu">
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <span class="badge animate-on-scroll fade-up">Est. 2024</span>
+                <h1 class="animate-on-scroll fade-up" style="transition-delay: 0.1s">Order Amidst <span
+                        class="highlight">Chaos</span></h1>
+                <p class="animate-on-scroll fade-up" style="transition-delay: 0.2s">Ensuring safety and discipline for
+                    every student, every day.</p>
+                <div class="cta-group animate-on-scroll fade-up" style="transition-delay: 0.3s">
+                    <button class="btn-primary">Become a Warden</button>
+                    <button class="btn-secondary">View Rules</button>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <!-- Abstract traffic shapes will go here via CSS/SVG -->
+                <div class="traffic-shape shape-1"></div>
+                <div class="traffic-shape shape-2"></div>
+                <div class="traffic-shape shape-3"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section-container">
+            <div class="section-header animate-on-scroll fade-up">
+                <h2>Who We Are</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="grid-2-col">
+                <div class="info-card glass-card animate-on-scroll fade-up" style="transition-delay: 0.1s">
+                    <div class="icon-box">🛡️</div>
+                    <h3>Our Mission</h3>
+                    <p>To cultivate a culture of discipline and safety within the school premises, ensuring smooth
+                        traffic flow and student security.</p>
+                </div>
+                <div class="info-card glass-card animate-on-scroll fade-up" style="transition-delay: 0.2s">
+                    <div class="icon-box">👁️</div>
+                    <h3>Our Vision</h3>
+                    <p>A school environment where every student takes responsibility for order, creating a chaos-free
+                        learning zone.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="guidelines" class="section-container">
+            <div class="section-header animate-on-scroll fade-up">
+                <h2>Rules & Guidelines</h2>
+                <p class="subtitle">Strictly enforced for safety</p>
+            </div>
+            <div class="rules-grid">
+                <div class="rule-item animate-on-scroll fade-in" style="transition-delay: 0.1s">
+                    <span class="rule-number">01</span>
+                    <p>Follow designated walkways at all times.</p>
+                </div>
+                <div class="rule-item animate-on-scroll fade-in" style="transition-delay: 0.2s">
+                    <span class="rule-number">02</span>
+                    <p>Respect the warden's signals immediately.</p>
+                </div>
+                <div class="rule-item animate-on-scroll fade-in" style="transition-delay: 0.3s">
+                    <span class="rule-number">03</span>
+                    <p>No running in corridors or staircases.</p>
+                </div>
+                <div class="rule-item animate-on-scroll fade-in" style="transition-delay: 0.4s">
+                    <span class="rule-number">04</span>
+                    <p>Keep right while walking in groups.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="join" class="section-container">
+            <div class="grid-2-col">
+                <div class="join-content animate-on-scroll slide-right">
+                    <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+                        <h2>Join the Force</h2>
+                        <div class="header-line" style="margin: 1rem 0;"></div>
+                    </div>
+                    <p style="color: var(--color-text-muted); margin-bottom: 2rem;">Become a part of the team that keeps
+                        our school safe. We are looking for disciplined and dedicated students.</p>
+
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" required placeholder=" ">
+                            <label for="name">Full Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" required placeholder=" ">
+                            <label for="email">Student Email</label>
+                        </div>
+                        <div class="form-group">
+                            <select id="grade" required>
+                                <option value="" disabled selected>Select Grade</option>
+                                <option value="9">Grade 9</option>
+                                <option value="10">Grade 10</option>
+                                <option value="11">Grade 11</option>
+                                <option value="12">Grade 12</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn-primary" style="width: 100%;">Submit Application</button>
+                    </form>
+                </div>
+                <div class="events-preview animate-on-scroll fade-up" style="transition-delay: 0.2s">
+                    <h3>Recent Alerts</h3>
+                    <div class="alert-card">
+                        <span class="date">Oct 24</span>
+                        <h4>Sports Day Traffic Plan</h4>
+                        <p>Special routing applies for the main ground entrance.</p>
+                    </div>
+                    <div class="alert-card" style="margin-top: 1rem;">
+                        <span class="date">Oct 20</span>
+                        <h4>New Walking Path</h4>
+                        <p>The path behind the library is now open for recess use.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-icon">🚧</span>
+                <span>TWS</span>
+            </div>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#guidelines">Guidelines</a>
+                <a href="#join">Join</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Traffic Warden Society. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Warden Login Modal -->
+    <div id="login-modal" class="modal">
+        <div class="modal-content glass-card">
+            <span class="close-modal">&times;</span>
+            <h2>Warden Access</h2>
+            <form id="login-form">
+                <div class="form-group">
+                    <input type="text" required placeholder=" ">
+                    <label>Badge ID</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" required placeholder=" ">
+                    <label>Passcode</label>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
